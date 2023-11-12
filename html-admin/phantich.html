@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dự Án 1</title>
+    <link rel="shortcut icon" href="images/logo index.png">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <!-- Sidebar toggle button--><a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Ẩn thanh bên"
+      ></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!-- User Menu-->
+        <li>
+          <a class="app-nav__item" href="?act=logout"
+            ><i class="bx bx-log-out bx-rotate-180"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img
+          class="app-sidebar__user-avatar"
+          src="images/user.webp"
+          width="50px"
+          alt="Hình ảnh người dùng"
+        />
+        <div>
+          <p class="app-sidebar__user-name">
+            <b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Khuất Văn Duy</font
+                ></font
+              ></b
+            >
+          </p>
+          <p class="app-sidebar__user-designation">
+            <font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Chào mừng trở lại</font
+              ></font
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <ul class="app-menu">
+        <li>
+          <a class="app-menu__item" href="bangdieukhien.html"
+            ><i class="app-menu__icon bx bx-tachometer"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Bảng điều khiển</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nguoidung.html"
+            ><i class="app-menu__icon bx bx-user-voice"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Người dùng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="hethongsanpham.html"
+            ><i class="app-menu__icon bx bx-purchase-tag-alt"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Hệ thống sản phẩm</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="dathang.html"
+            ><i class="app-menu__icon bx bx-task"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Đặt hàng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item active" href="phantich.html"
+            ><i class="app-menu__icon bx bx-pie-chart-alt-2"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Phân tích</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="quanlybaiviet.html"
+            ><i class="app-menu__icon bx bx-news"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Quản lý blog</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nhacnho.html"
+            ><i class="app-menu__icon bx bx-calendar-check"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Nhắc nhở</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="#"
+            ><i class="app-menu__icon bx bx-cog"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Cài đặt</font></font
+              ></span
+            ></a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <main class="app-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="app-title">
+            <ul class="app-breadcrumb breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#"
+                  ><b
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Phân tích
+                      </font></font
+                    ></b
+                  ></a
+                >
+              </li>
+            </ul>
+            <div id="clock">
+              <span class="date"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Thứ Năm, 02/11/2023 - 23 Giờ 11 phút 52 giây</font
+                  ></font
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <a href="nguoidung.html">
+          <div class="widget-small primary coloured-icon">
+            <i class="icon bx bxs-user fa-3x"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Người dùng</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">9 người</font></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="hethongsanpham.html">
+          <div class="widget-small info coloured-icon">
+            <i class="icon bx bxs-purchase-tag-alt fa-3x"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Tổng sản phẩm</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >28 sản phẩm</font
+                    ></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="dathang.html">
+          <div class="widget-small warning coloured-icon">
+            <i class="icon fa-3x bx bxs-shopping-bag-alt"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Tổng số đơn hàng</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >6 đơn hàng</font
+                    ></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="hethongsanpham.html">
+          <div class="widget-small danger coloured-icon">
+            <i class="icon fa-3x bx bxs-info-circle"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">Sản phẩm không hoạt động</font></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >0</font
+                    ></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="widget-small primary coloured-icon">
+            <i class="icon fa-3x bx bxs-chart"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Tổng Thu Nhập</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">
+                      21.163.560 đ
+                    </font></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="nguoidung.html">
+          <div class="widget-small info coloured-icon">
+            <i class="icon fa-3x bx bxs-user-badge"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Người dùng mới</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >3 người dùng</font
+                    ></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="hethongsanpham.html">
+          <div class="widget-small warning coloured-icon">
+            <i class="icon fa-3x bx bxs-tag-x"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit">hết hàng</font></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit"
+                      >1 sản phẩm</font
+                    ></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="dathang.html">
+          <div class="widget-small danger coloured-icon">
+            <i class="icon fa-3x bx bxs-receipt"></i>
+            <div class="info">
+              <h4>
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Đơn hàng bị hủy</font
+                  ></font
+                >
+              </h4>
+              <p>
+                <b
+                  ><font style="vertical-align: inherit"
+                    ><font style="vertical-align: inherit">
+                      1 đơn hàng
+                    </font></font
+                  ></b
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div>
+              <h3 class="tile-title">
+                <font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >SẢN PHẨM BÁN TỐT NHẤT</font
+                  ></font
+                >
+              </h3>
+            </div>
+            <div class="tile-body">
+              <table class="table table-hover table-bordered" id="sampleTable">
+                <thead>
+                  <tr>
+                    <th>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >ID</font
+                        ></font
+                      >
+                    </th>
+                    <th>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >TÊN SẢN PHẨM</font
+                        ></font
+                      >
+                    </th>
+                    <th>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">GIÁ</font></font
+                      >
+                    </th>
+                    <th>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >GIẢM GIÁ</font
+                        ></font
+                      >
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">30</font></font
+                      >
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Cafe chicago</font
+                        ></font
+                      >
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >600.000 VNĐ</font
+                        ></font
+                      ><!--</td-->
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">13</font></font
+                      ><!--</td-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">19</font></font
+                      >
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >cootel</font
+                        ></font
+                      >
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >750.000</font
+                        ></font
+                      ><!--</td-->
+                    </td>
+                    <td>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">22</font></font
+                      ><!--</td-->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tile">
+            <h3 class="tile-title">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >DỮ LIỆU HÀNG THÁNG</font
+                ></font
+              >
+            </h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <canvas
+                class="embed-responsive-item"
+                id="lineChartDemo"
+                width="184"
+                height="103"
+                style="width: 184px; height: 103px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tile">
+            <h3 class="tile-title">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >THỐNG KÊ BÁN HÀNG</font
+                ></font
+              >
+            </h3>
+            <div class="embed-responsive embed-responsive-16by9">
+              <canvas
+                class="embed-responsive-item"
+                id="barChartDemo"
+                width="184"
+                height="103"
+                style="width: 184px; height: 103px"
+              ></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="font-size: 13px">
+        <p>
+          <b>
+            <font style="vertical-align: inherit"
+              >Bản Quyền &copy; 2023 . Thuộc Về Nhóm Duy Dự Án 1 FPT Poly.</font
+            ></b>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

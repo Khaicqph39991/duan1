@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dự Án 1</title>
+    <link rel="shortcut icon" href="images/logo index.png">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <!-- Sidebar toggle button--><a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Ẩn thanh bên"
+      ></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!-- User Menu-->
+        <li>
+          <a class="app-nav__item" href="?act=logout"
+            ><i class="bx bx-log-out bx-rotate-180"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img
+          class="app-sidebar__user-avatar"
+          src="images/user.webp"
+          width="50px"
+          alt="Hình ảnh người dùng"
+        />
+        <div>
+          <p class="app-sidebar__user-name">
+            <b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Khuất Văn Duy</font
+                ></font
+              ></b
+            >
+          </p>
+          <p class="app-sidebar__user-designation">
+            <font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Chào mừng trở lại</font
+              ></font
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <ul class="app-menu">
+        <li>
+          <a class="app-menu__item" href="bangdieukhien.html"
+            ><i class="app-menu__icon bx bx-tachometer"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Bảng điều khiển</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nguoidung.html"
+            ><i class="app-menu__icon bx bx-user-voice"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Người dùng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="hethongsanpham.html"
+            ><i class="app-menu__icon bx bx-purchase-tag-alt"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Hệ thống sản phẩm</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="dathang.html"
+            ><i class="app-menu__icon bx bx-task"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Đặt hàng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="phantich.html"
+            ><i class="app-menu__icon bx bx-pie-chart-alt-2"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Phân tích</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="quanlybaiviet.html"
+            ><i class="app-menu__icon bx bx-news"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Quản lý blog</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item active" href="nhacnho.html"
+            ><i class="app-menu__icon bx bx-calendar-check"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Nhắc nhở</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="#"
+            ><i class="app-menu__icon bx bx-cog"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Cài đặt</font></font
+              ></span
+            ></a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <main class="app-content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="app-title">
+            <ul class="app-breadcrumb breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#"
+                  ><b
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Nhắc nhở</font
+                      ></font
+                    ></b
+                  ></a
+                >
+              </li>
+            </ul>
+            <div id="clock">
+              <span class="date"
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Thứ Năm, 02/11/2023 - 23 Giờ 19 phút 12 giây</font
+                  ></font
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div id="external-events">
+                    <h4 class="mb-4">
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Kéo và thả sự kiện</font
+                        ></font
+                      >
+                    </h4>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Công ty công ty</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Warning</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >nhật sinh nhật</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Lễ nghĩa</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Đi công tác</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Gặp khách hàng</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <div class="fc-event ui-draggable ui-draggable-handle">
+                      <b
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Tổ chức du lịch</font
+                          ></font
+                        ></b
+                      >
+                    </div>
+                    <p class="animated-checkbox mt-20">
+                      <label>
+                        <input id="drop-remove" type="checkbox" /><span
+                          class="label-text"
+                          ><font style="vertical-align: inherit"
+                            ><font style="vertical-align: inherit"
+                              >Hủy bỏ sau khi thư giãn</font
+                            ></font
+                          ></span
+                        >
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div id="calendar" class="fc fc-ltr fc-unthemed">
+                    <div class="fc-toolbar">
+                      <div class="fc-left">
+                        <div class="fc-button-group">
+                          <button
+                            type="button"
+                            class="fc-prev-button fc-button fc-state-default fc-corner-left"
+                          >
+                            <span
+                              class="fc-icon fc-icon-left-single-arrow"
+                            ></span></button
+                          ><button
+                            type="button"
+                            class="fc-next-button fc-button fc-state-default fc-corner-right"
+                          >
+                            <span
+                              class="fc-icon fc-icon-right-single-arrow"
+                            ></span>
+                          </button>
+                        </div>
+                        <button
+                          type="button"
+                          class="fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right"
+                        >
+                          <font style="vertical-align: inherit"
+                            ><font style="vertical-align: inherit"
+                              >Hôm nay</font
+                            ></font
+                          >
+                        </button>
+                      </div>
+                      <div class="fc-right">
+                        <div class="fc-button-group">
+                          <button
+                            type="button"
+                            class="fc-month-button fc-button fc-state-default fc-corner-left fc-state-active"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >tháng</font
+                              ></font
+                            ></button
+                          ><button
+                            type="button"
+                            class="fc-agendaWeek-button fc-button fc-state-default"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >tuần</font
+                              ></font
+                            ></button
+                          ><button
+                            type="button"
+                            class="fc-agendaDay-button fc-button fc-state-default fc-corner-right"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >ngày</font
+                              ></font
+                            >
+                          </button>
+                        </div>
+                      </div>
+                      <div class="fc-center"><h2></h2></div>
+                      <div class="fc-clear"></div>
+                    </div>
+                    <div class="fc-view-container">
+                      <div class="fc-view fc-month-view fc-basic-view">
+                        <table>
+                          <thead class="fc-head">
+                            <tr>
+                              <td class="fc-head-container fc-widget-header">
+                                <div class="fc-row fc-widget-header">
+                                  <table>
+                                    <thead>
+                                      <tr>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-sun"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Cập nhật chủ đề</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-mon"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 2</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-tue"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 3</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-wed"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 4</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-thu"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 5</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-fri"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 6</font
+                                            ></font
+                                          >
+                                        </th>
+                                        <th
+                                          class="fc-day-header fc-widget-header fc-sat"
+                                        >
+                                          <font style="vertical-align: inherit"
+                                            ><font
+                                              style="vertical-align: inherit"
+                                              >Thứ 7</font
+                                            ></font
+                                          >
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody class="fc-body">
+                            <tr>
+                              <td class="fc-widget-content">
+                                <div class="fc-day-grid-container">
+                                  <div class="fc-day-grid">
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 89px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-other-month fc-past"
+                                                data-date="2023-10-29"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-other-month fc-past"
+                                                data-date="2023-10-30"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-other-month fc-past"
+                                                data-date="2023-10-31"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-past"
+                                                data-date="2023-11-01"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-today fc-state-highlight"
+                                                data-date="2023-11-02"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-future"
+                                                data-date="2023-11-03"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-future"
+                                                data-date="2023-11-04"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-other-month fc-past"
+                                                data-date="2023-10-29"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >29</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-other-month fc-past"
+                                                data-date="2023-10-30"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >30</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-other-month fc-past"
+                                                data-date="2023-10-31"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >31</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-past"
+                                                data-date="2023-11-01"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >1</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-today fc-state-highlight"
+                                                data-date="2023-11-02"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >2</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-future"
+                                                data-date="2023-11-03"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >3</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-future"
+                                                data-date="2023-11-04"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >4</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 89px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-future"
+                                                data-date="2023-11-05"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-future"
+                                                data-date="2023-11-06"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-future"
+                                                data-date="2023-11-07"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-future"
+                                                data-date="2023-11-08"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-future"
+                                                data-date="2023-11-09"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-future"
+                                                data-date="2023-11-10"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-future"
+                                                data-date="2023-11-11"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-future"
+                                                data-date="2023-11-05"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >5</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-future"
+                                                data-date="2023-11-06"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >6</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-future"
+                                                data-date="2023-11-07"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >7</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-future"
+                                                data-date="2023-11-08"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >số 8</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-future"
+                                                data-date="2023-11-09"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >9</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-future"
+                                                data-date="2023-11-10"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >10</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-future"
+                                                data-date="2023-11-11"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >11</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 89px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-future"
+                                                data-date="2023-11-12"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-future"
+                                                data-date="2023-11-13"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-future"
+                                                data-date="2023-11-14"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-future"
+                                                data-date="2023-11-15"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-future"
+                                                data-date="2023-11-16"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-future"
+                                                data-date="2023-11-17"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-future"
+                                                data-date="2023-11-18"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-future"
+                                                data-date="2023-11-12"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >12</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-future"
+                                                data-date="2023-11-13"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >13</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-future"
+                                                data-date="2023-11-14"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >14</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-future"
+                                                data-date="2023-11-15"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >15</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-future"
+                                                data-date="2023-11-16"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >16</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-future"
+                                                data-date="2023-11-17"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >17</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-future"
+                                                data-date="2023-11-18"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >18</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 89px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-future"
+                                                data-date="2023-11-19"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-future"
+                                                data-date="2023-11-20"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-future"
+                                                data-date="2023-11-21"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-future"
+                                                data-date="2023-11-22"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-future"
+                                                data-date="2023-11-23"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-future"
+                                                data-date="2023-11-24"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-future"
+                                                data-date="2023-11-25"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-future"
+                                                data-date="2023-11-19"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >19</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-future"
+                                                data-date="2023-11-20"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >20</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-future"
+                                                data-date="2023-11-21"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >21</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-future"
+                                                data-date="2023-11-22"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >22</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-future"
+                                                data-date="2023-11-23"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >23</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-future"
+                                                data-date="2023-11-24"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >24</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-future"
+                                                data-date="2023-11-25"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >25</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 89px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-future"
+                                                data-date="2023-11-26"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-future"
+                                                data-date="2023-11-27"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-future"
+                                                data-date="2023-11-28"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-future"
+                                                data-date="2023-11-29"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-future"
+                                                data-date="2023-11-30"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-other-month fc-future"
+                                                data-date="2023-12-01"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-other-month fc-future"
+                                                data-date="2023-12-02"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-future"
+                                                data-date="2023-11-26"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >26</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-future"
+                                                data-date="2023-11-27"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >27</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-future"
+                                                data-date="2023-11-28"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >28</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-future"
+                                                data-date="2023-11-29"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >29</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-future"
+                                                data-date="2023-11-30"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >30</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-other-month fc-future"
+                                                data-date="2023-12-01"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >1</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-other-month fc-future"
+                                                data-date="2023-12-02"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >2</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="fc-row fc-week fc-widget-content"
+                                      style="height: 92px"
+                                    >
+                                      <div class="fc-bg">
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sun fc-other-month fc-future"
+                                                data-date="2023-12-03"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-mon fc-other-month fc-future"
+                                                data-date="2023-12-04"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-tue fc-other-month fc-future"
+                                                data-date="2023-12-05"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-wed fc-other-month fc-future"
+                                                data-date="2023-12-06"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-thu fc-other-month fc-future"
+                                                data-date="2023-12-07"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-fri fc-other-month fc-future"
+                                                data-date="2023-12-08"
+                                              ></td>
+                                              <td
+                                                class="fc-day fc-widget-content fc-sat fc-other-month fc-future"
+                                                data-date="2023-12-09"
+                                              ></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div class="fc-content-skeleton">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <td
+                                                class="fc-day-number fc-sun fc-other-month fc-future"
+                                                data-date="2023-12-03"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >3</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-mon fc-other-month fc-future"
+                                                data-date="2023-12-04"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >4</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-tue fc-other-month fc-future"
+                                                data-date="2023-12-05"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >5</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-wed fc-other-month fc-future"
+                                                data-date="2023-12-06"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >6</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-thu fc-other-month fc-future"
+                                                data-date="2023-12-07"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >7</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-fri fc-other-month fc-future"
+                                                data-date="2023-12-08"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >số 8</font
+                                                  ></font
+                                                >
+                                              </td>
+                                              <td
+                                                class="fc-day-number fc-sat fc-other-month fc-future"
+                                                data-date="2023-12-09"
+                                              >
+                                                <font
+                                                  style="
+                                                    vertical-align: inherit;
+                                                  "
+                                                  ><font
+                                                    style="
+                                                      vertical-align: inherit;
+                                                    "
+                                                    >9</font
+                                                  ></font
+                                                >
+                                              </td>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

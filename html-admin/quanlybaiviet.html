@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dự Án 1</title>
+    <link rel="shortcut icon" href="images/logo index.png">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <!-- modal xoa start -->
+    <div class="modal fade" id="myModalxoa">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="swal-text p-4" ><h3>Cảnh báo</h3>
+            <h4> Bạn có chắc không?</h4></div>
+          <div class="swal-footer">
+            <div class="justify-content-center d-flex m-3" >
+              <button class="btn btn-cancel mr-2" data-bs-dismiss="modal" >Hủy</button>
+              <button class="btn btn-save" >Xóa</button>
+            </div>
+           
+            
+          </div>
+          </div>
+    </div>
+  </div>
+
+      <!-- modal xoa end -->
+    <header class="app-header">
+      <!-- Sidebar toggle button--><a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Ẩn thanh bên"
+      ></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!-- User Menu-->
+        <li>
+          <a class="app-nav__item" href="?act=logout"
+            ><i class="bx bx-log-out bx-rotate-180"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img
+          class="app-sidebar__user-avatar"
+          src="images/user.webp"
+          width="50px"
+          alt="Hình ảnh người dùng"
+        />
+        <div>
+          <p class="app-sidebar__user-name">
+            <b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Khuất Văn Duy</font
+                ></font
+              ></b
+            >
+          </p>
+          <p class="app-sidebar__user-designation">
+            <font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Chào mừng trở lại</font
+              ></font
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <ul class="app-menu">
+        <li>
+          <a class="app-menu__item" href="bangdieukhien.html"
+            ><i class="app-menu__icon bx bx-tachometer"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Bảng điều khiển</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nguoidung.html"
+            ><i class="app-menu__icon bx bx-user-voice"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Người dùng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="hethongsanpham.html"
+            ><i class="app-menu__icon bx bx-purchase-tag-alt"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Hệ thống sản phẩm</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="dathang.html"
+            ><i class="app-menu__icon bx bx-task"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Đặt hàng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="phantich.html"
+            ><i class="app-menu__icon bx bx-pie-chart-alt-2"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Phân tích</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item active" href="quanlybaiviet.html"
+            ><i class="app-menu__icon bx bx-news"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Quản lý blog</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nhacnho.html"
+            ><i class="app-menu__icon bx bx-calendar-check"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Nhắc nhở</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="#"
+            ><i class="app-menu__icon bx bx-cog"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Cài đặt</font></font
+              ></span
+            ></a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <main class="app-content">
+      <div class="app-title">
+        <ul class="app-breadcrumb breadcrumb side">
+          <li class="breadcrumb-item active">
+            <a href="#"
+              ><b
+                ><font style="vertical-align: inherit"
+                  ><font style="vertical-align: inherit"
+                    >Quản lý blog</font
+                  ></font
+                ></b
+              ></a
+            >
+          </li>
+        </ul>
+        <div id="clock">
+          <span class="date">
+            Thusday, 02/11/2023 - 23 Hour 16 min 27 second</span
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <div class="tile-body">
+              <div class="row element-button">
+                <div class="col-sm-2">
+                  <a
+                    class="btn btn-add btn-sm"
+                    href="add-blog.html"
+                    title="Thêm mới"
+                    ><i class="fas fa-plus"></i
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">
+                        Thêm mới</font
+                      ></font
+                    ></a
+                  >
+                </div>
+              </div>
+              <div
+                id="sampleTable_wrapper"
+                class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"
+              >
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <div class="dataTables_length" id="sampleTable_length">
+                      <label
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Trình diễn</font
+                          ></font
+                        ><select
+                          name="sampleTable_length"
+                          aria-controls="sampleTable"
+                          class="form-control form-control-sm"
+                        >
+                          <option value="10">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >10</font
+                              ></font
+                            >
+                          </option>
+                          <option value="25">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >25</font
+                              ></font
+                            >
+                          </option>
+                          <option value="50">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >50</font
+                              ></font
+                            >
+                          </option>
+                          <option value="100">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >100</font
+                              ></font
+                            >
+                          </option></select
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Mục</font
+                          ></font
+                        ></label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <div id="sampleTable_filter" class="dataTables_filter">
+                      <label
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >Tìm kiếm:</font
+                          ></font
+                        ><input
+                          type="search"
+                          class="form-control form-control-sm"
+                          placeholder=""
+                          aria-controls="sampleTable"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table
+                      class="table table-hover table-bordered table-responsive-lg dataTable no-footer"
+                      cellpadding="0"
+                      cellspacing="0"
+                      border="0"
+                      id="sampleTable"
+                      role="grid"
+                      aria-describedby="sampleTable_info"
+                    >
+                      <thead>
+                        <tr role="row">
+                          <th
+                            width="15"
+                            class="sorting_asc"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-sort="ascending"
+                            aria-label="STT: kích hoạt để sắp xếp cột giảm dần"
+                            style="width: 26px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >STT</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            width="300"
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Tiêu đề: kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 300px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Tiêu đề</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            width="80"
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Tác giả: kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 80px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Tác giả</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            width="50"
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Hình ảnh: kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 50px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Hình ảnh</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Nội dung: kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 216px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Nội dung</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Ngày: kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 71px"
+                          >
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Ngày</font
+                              ></font
+                            >
+                          </th>
+                          <th
+                            width="100"
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="sampleTable"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label=": kích hoạt để sắp xếp cột tăng dần"
+                            style="width: 101px"
+                          ></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr role="row" class="odd">
+                          <td class="sorting_1">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >1</font
+                              ></font
+                            >
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                              >Báo cáo doanh thu tháng
+                              </font
+                            >
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                              >Admin</font
+                            >
+                          </td>
+                          <td>
+                            <img
+                              src=""
+                              width="50px"
+                            />
+                          </td>
+                          <td>
+                            <p>
+                              Báo cáo
+                            </p>
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                                >Ngày 29 tháng 8 năm 2023, 2:46 chiều</font
+                              >
+                          </td>
+                          <td class="table-td-center">
+                           
+                            <button type="button" class="btn btn-primary btn-sm trash" data-bs-toggle="modal" data-bs-target="#myModalxoa">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-sm edit"
+                              type="button"
+                              title="Chỉnh sửa"
+                              ><i class="fas fa-edit"></i>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr role="row" class="even">
+                          <td class="sorting_1">
+                            <font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >2</font
+                              ></font
+                            >
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                              >Báo vlog</font
+                            >
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                              >admin2</font
+                            >
+                          </td>
+                          <td>
+                            <img src="" width="50px" />
+                          </td>
+                          <td>
+                            <p>Báo cáo
+                            </p>
+                          </td>
+                          <td>
+                            <font style="vertical-align: inherit"
+                                >29 tháng 8 năm 2023, 2:40 chiều</font
+                              >
+                          </td>
+                          <td class="table-td-center">
+                            <button type="button" class="btn btn-primary btn-sm trash" data-bs-toggle="modal" data-bs-target="#myModalxoa">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                            <a
+                              href="#"
+                              class="btn btn-primary btn-sm edit"
+                              type="button"
+                              title="Chỉnh sửa"
+                              ><i class="fas fa-edit"></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5">
+                    <div
+                      class="dataTables_info"
+                      id="sampleTable_info"
+                      role="status"
+                      aria-live="polite"
+                    >
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Hiển thị 1 đến 10 trên 13 mục</font
+                        ></font
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <div
+                      class="dataTables_paginate paging_simple_numbers"
+                      id="sampleTable_paginate"
+                    >
+                      <ul class="pagination">
+                        <li
+                          class="paginate_button page-item previous disabled"
+                          id="sampleTable_previous"
+                        >
+                          <a
+                            href="#"
+                            aria-controls="sampleTable"
+                            data-dt-idx="0"
+                            tabindex="0"
+                            class="page-link"
+                            ><font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Trước</font
+                              ></font
+                            ></a
+                          >
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a
+                            href="#"
+                            aria-controls="sampleTable"
+                            data-dt-idx="1"
+                            tabindex="0"
+                            class="page-link"
+                            ><font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >1</font
+                              ></font
+                            ></a
+                          >
+                        </li>
+                        <li class="paginate_button page-item">
+                          <a
+                            href="#"
+                            aria-controls="sampleTable"
+                            data-dt-idx="2"
+                            tabindex="0"
+                            class="page-link"
+                            ><font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >2</font
+                              ></font
+                            ></a
+                          >
+                        </li>
+                        <li
+                          class="paginate_button page-item next"
+                          id="sampleTable_next"
+                        >
+                          <a
+                            href="#"
+                            aria-controls="sampleTable"
+                            data-dt-idx="3"
+                            tabindex="0"
+                            class="page-link"
+                            ><font style="vertical-align: inherit"
+                              ><font style="vertical-align: inherit"
+                                >Kế tiếp</font
+                              ></font
+                            ></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

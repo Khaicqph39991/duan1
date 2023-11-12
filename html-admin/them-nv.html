@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Dự Án 1</title>
+    <link rel="shortcut icon" href="images/logo index.png">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <!-- Sidebar toggle button--><a
+        class="app-sidebar__toggle"
+        href="#"
+        data-toggle="sidebar"
+        aria-label="Ẩn thanh bên"
+      ></a>
+      <!-- Navbar Right Menu-->
+      <ul class="app-nav">
+        <!-- User Menu-->
+        <li>
+          <a class="app-nav__item" href="?act=logout"
+            ><i class="bx bx-log-out bx-rotate-180"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <aside class="app-sidebar">
+      <div class="app-sidebar__user">
+        <img
+          class="app-sidebar__user-avatar"
+          src="images/user.webp"
+          width="50px"
+          alt="Hình ảnh người dùng"
+        />
+        <div>
+          <p class="app-sidebar__user-name">
+            <b
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Khuất Văn Duy</font
+                ></font
+              ></b
+            >
+          </p>
+          <p class="app-sidebar__user-designation">
+            <font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Chào mừng trở lại</font
+              ></font
+            >
+          </p>
+        </div>
+      </div>
+      <hr />
+      <ul class="app-menu">
+        <li>
+          <a class="app-menu__item" href="bangdieukhien.html"
+            ><i class="app-menu__icon bx bx-tachometer"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Bảng điều khiển</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item active" href="nguoidung.html"
+            ><i class="app-menu__icon bx bx-user-voice"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Người dùng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="hethongsanpham.html"
+            ><i class="app-menu__icon bx bx-purchase-tag-alt"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Hệ thống sản phẩm</font
+                ></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="dathang.html"
+            ><i class="app-menu__icon bx bx-task"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Đặt hàng</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="phantich.html"
+            ><i class="app-menu__icon bx bx-pie-chart-alt-2"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Phân tích</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="quanlybaiviet.html"
+            ><i class="app-menu__icon bx bx-news"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Quản lý blog</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="nhacnho.html"
+            ><i class="app-menu__icon bx bx-calendar-check"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Nhắc nhở</font></font
+              ></span
+            ></a
+          >
+        </li>
+        <li>
+          <a class="app-menu__item" href="#"
+            ><i class="app-menu__icon bx bx-cog"></i
+            ><span class="app-menu__label"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Cài đặt</font></font
+              ></span
+            ></a
+          >
+        </li>
+      </ul>
+    </aside>
+    <main class="app-content">
+      <div class="app-title">
+        <ul class="app-breadcrumb breadcrumb">
+          <li class="breadcrumb-item">
+            <font style="vertical-align: inherit"
+              ><font style="vertical-align: inherit"
+                >Danh sách nhân viên</font
+              ></font
+            >
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Thêm nhân viên</font
+                ></font
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tile">
+            <h3 class="tile-title">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit"
+                  >Tạo nhân viên mới</font
+                ></font
+              >
+            </h3>
+            <div class="tile-body">
+              <div class="row element-button">
+                <div class="col-sm-2">
+                  <a
+                    class="btn btn-add btn-sm"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    ><b
+                      ><i class="fas fa-folder-plus"></i
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Tạo mới chức năng</font
+                        ></font
+                      ></b
+                    ></a
+                  >
+                </div>
+              </div>
+              <form class="row">
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Tên tài khoản</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Họ và tên</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" required="" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Địa chỉ Email</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" required="" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Địa chỉ thường trú</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" required="" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Số điện thoại</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="number" required="" />
+                </div>
+                <div class="form-group col-md-4">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Ngày sinh</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="date" />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Nơi sinh</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" required="" />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Số CMND</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="number" required="" />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Cấp ngày</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="date" required="" />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Nơi cấp</font
+                      ></font
+                    ></label
+                  >
+                  <input class="form-control" type="text" required="" />
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Giới tính</font
+                      ></font
+                    ></label
+                  >
+                  <select class="form-control" id="exampleSelect2" required="">
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >--Chọn giới tính --</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Nam</font></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">Nữ</font></font
+                      >
+                    </option>
+                  </select>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label for="exampleSelect1" class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Vai trò</font
+                      ></font
+                    ></label
+                  >
+                  <select class="form-control" id="exampleSelect1">
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >-- User --</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Admin</font
+                        ></font
+                      >
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Bằng cấp</font
+                      ></font
+                    ></label
+                  >
+                  <select class="form-control" id="exampleSelect3">
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >--Chọn bằng cấp --</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Tốt nghiệp Đại Học</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Tốt nghiệp Cao Đẳng</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Tốt nghiệp Phổ Thông</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Chưa tốt nghiệp</font
+                        ></font
+                      >
+                    </option>
+                    <option>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >Không có cấp độ</font
+                        ></font
+                      >
+                    </option>
+                  </select>
+                </div>
+                <div class="form-group col-md-12">
+                  <label class="control-label"
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >Nhân viên ảnh 3x4</font
+                      ></font
+                    ></label
+                  >
+                  <div id="myfileupload">
+                    <input
+                      type="file"
+                      id="uploadfile"
+                      name="ImageUpload"
+                      onchange="readURL(this);"
+                    />
+                  </div>
+                  <div id="thumbbox">
+                    <img
+                      height="300"
+                      width="300"
+                      alt="Hình ảnh ngón tay cái"
+                      id="thumbimage"
+                      style="display: none"
+                    />
+                    <a class="removeimg" href="javascript:"></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button class="btn btn-save" type="button">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Thêm Mới</font></font
+              >
+            </button>
+            <a class="btn btn-cancel" href="nguoidung.html"
+              ><font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">Hủy</font></font
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
